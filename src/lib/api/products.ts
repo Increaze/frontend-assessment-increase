@@ -64,13 +64,17 @@ export async function getCategories(): Promise<string[]> {
     .filter(Boolean);
 }
 
-export async function getProductById(id: string): Promise<Product> {
-  const res = await fetch(`${BASE_URL}/products/${id}`, {
+export async function getProductById(id: string): Promise<Product | null> {
+  const res = await fetch(`${BASE_URL}/products/${encodeURIComponent(id)}`, {
     next: { revalidate: 600 },
   });
 
+  if (res.status === 404) {
+    return null;
+  }
+
   if (!res.ok) {
-    throw new Error('Failed to fetch product');
+    throw new Error(`Failed to fetch product: ${res.status}`);
   }
 
   return res.json();
