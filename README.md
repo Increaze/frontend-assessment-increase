@@ -10,7 +10,7 @@ The app allows users to browse, search, filter, and view detailed information ab
 
 ## 🚀 Live Demo
 
-👉 [Live URL](https://your-deployment-link.com)
+👉 [Live URL](https://frontend-assessment-increase.vercel.app/products)
 
 ---
 
