@@ -240,8 +240,8 @@ The application was built with Lighthouse metrics in mind:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/frontend-assessment-[your-name]
-cd frontend-assessment-[your-name]
+git clone https://github.com/Increaze/frontend-assessment-increase.git
+cd frontend-assessment-increase
 ```
 
 Install dependencies:

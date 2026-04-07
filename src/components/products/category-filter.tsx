@@ -12,7 +12,7 @@ export default function CategoryFilter({ categories, value, onChange }: Props) {
         <select
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className="w-full appearance-none rounded-lg border border-slate-300 text-black px-4 py-3 pr-10 outline-none transition focus:border-slate-900"
+          className="w-full appearance-none rounded-lg border border-border text-text px-4 py-3 pr-10 outline-none transition focus:border-slate-900"
         >
           <option value="all">All categories</option>
           {categories.map((category) => (

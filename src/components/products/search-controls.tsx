@@ -82,14 +82,14 @@ export default function SearchControls({
   return (
     <section className="mb-8 flex flex-col gap-4 md:flex-row">
       <label className="flex-1">
-        <span className="mb-2 block text-sm font-medium text-slate-700">
+        <span className="mb-2 block text-sm font-medium text-text">
           Search
         </span>
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search products..."
-          className="w-full rounded-lg border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-900"
+          className="w-full rounded-lg border border-border px-4 py-3 outline-none transition focus:border-slate-900"
         />
       </label>
 
