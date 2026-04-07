@@ -1,35 +1,6 @@
 @config "../../tailwind.config.ts";
 @import "tailwindcss";
 
-/* :root {
-  --background: #F8FAFC;
-
-  --foreground: #1E293B;
-  --foreground-strong: #0F172A;
-  --foreground-muted: #64748B;
-
-  --surface: #FFFFFF;
-  --surface-muted: #F1F5F9;
-
-  --border: #E2E8F0;
-}
-
-
-@theme inline {
-  --color-background: var(--background);
-
-  --color-text: var(--foreground);
-  --color-text-strong: var(--foreground-strong);
-  --color-text-muted: var(--foreground-muted);
-
-  --color-surface: var(--surface);
-  --color-surface-muted: var(--surface-muted);
-
-  --color-border: var(--border);
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-} */
+}

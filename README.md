@@ -165,7 +165,7 @@ Benefits:
 
 ### 7. Styling System
 
-A custom design system was implemented using Tailwind + CSS variables:
+A custom design system was implemented using Tailwind theme tokens:
 
 * Background: `#F8FAFC`
 * Surface: `#FFFFFF`
