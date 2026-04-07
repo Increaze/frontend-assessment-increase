@@ -6,11 +6,11 @@ import { getProductById } from '@/lib/api/products';
 import Breadcrumbs from '@/components/products/breadcrumbs';
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = params;
+  const { id } = await params;
 
   try {
     const product = await getProductById(id);
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProductDetailPage({ params }: Props) {
-  const { id } = params;
+  const { id } = await params;
 
   try {
     const product = await getProductById(id);
@@ -68,9 +68,7 @@ export default async function ProductDetailPage({ params }: Props) {
               {product.title}
             </h1>
 
-            <p className="mt-4 text-text">
-              {product.description}
-            </p>
+            <p className="mt-4 text-text">{product.description}</p>
 
             <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
               <div className="rounded-xl border border-border bg-surface p-4 shadow-card">
